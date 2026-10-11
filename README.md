@@ -28,10 +28,10 @@ const test = knightMoves(source,target);
 -   Now copy and paste in `demo.js`
 
 ```
-console.log(knightMoves(source,destination))
+console.log(test)
 ```
 
--   Now open the terminal in the current directory and run the command : `node demo.js`
+-   Now open the terminal in the current directory and run the command : `node demo.js`.You should have node in your machine to run the command. To install node -  [Node installation gfg](https://www.geeksforgeeks.org/installation-guide/install-node-js-on-windows/) 
 -   You will get the shortest path in the terminal. It will look something like this : ![](./assets/console.png)
 - You can change the source and destination in the `knightMoves()` function and run `node demo.js` to find shortest path for different source and destinations.
 
