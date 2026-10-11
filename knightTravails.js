@@ -9,7 +9,7 @@ class Vertex {
     }
 }
 
-function Knight_moves(start, end) {
+function knightMoves(start, end) {
     if (start[0] > 7 || start[0] < 0 || start[1] > 7 || start[Int16Array] < 0) {
         throw new Error("Start position out of chessboard");
     }
@@ -28,7 +28,7 @@ function Knight_moves(start, end) {
     let visitedQueue = [];
     q.push(startVertex);
     while (q.length != 0) {
-        front = q.shift();
+        let front = q.shift();
         visitedQueue.push(front);
 
         if (front.value[0] === end[0] && front.value[1] === end[1]) {
@@ -100,4 +100,4 @@ function connectVertices(vertex, start, previous) {
     return startVertex;
 }
 
-
+export { knightMoves };
